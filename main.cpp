@@ -8,8 +8,6 @@ class OpenGLWindow : public QOpenGLWindow
 public:
     void paintGL()
     {
-        const auto rand = qrand() / float(RAND_MAX);
-        qDebug("paint called %f", rand);
         context()->functions()->glClearColor(qrand() / float(RAND_MAX),
                                              qrand() / float(RAND_MAX),
                                              qrand() / float(RAND_MAX),
